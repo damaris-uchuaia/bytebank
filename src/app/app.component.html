@@ -1,0 +1,12 @@
+<app-nova-transferencia (aoTransferir)="transferir($event)">
+</app-nova-transferencia>
+<!--Aqui recebemos o valor atrave do evento (aoTransferir)chamamos o evento
+   que criamos e invocamos no nova transferenca.ts  com o Output.
+   O parametro $event é responsavel por chamar o valor do nosso metodo.
+   É preciso ainda tbm criar o metodo transferir em app.ts-->
+
+   <div>
+   <p>Valor: {{ transferencia.valor }}</p>
+   <p>Destino: {{ transferencia.destino }}</p>
+   <p>Conta: {{ transferencia.codigoConta }}</p>
+</div>
